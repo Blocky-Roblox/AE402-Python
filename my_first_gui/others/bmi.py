@@ -21,7 +21,7 @@ def calculate():
             message="BMI calculated.\nYour BMI is " + str(round(result, 1)) + ".\n" + feedback
         )
     else:
-        tkinter.messagebox.showerror(title="Error", message="Weight or height not given.")
+        tkinter.messagebox.showerror(title="Error", message="Height or weight not given.")
 
 root = tk.Tk()
 
