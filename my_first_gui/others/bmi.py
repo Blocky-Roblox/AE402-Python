@@ -18,7 +18,7 @@ def calculate():
             feedback = "You are too thin."
         tkinter.messagebox.showinfo(
             title="Success", 
-            message="BMI calculated.\nYour BMI is " + str(result) + ".\n" + feedback
+            message="BMI calculated.\nYour BMI is " + str(round(result, 1)) + ".\n" + feedback
         )
     else:
         tkinter.messagebox.showerror(title="Error", message="Weight or height not given.")
