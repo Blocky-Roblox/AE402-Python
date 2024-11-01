@@ -15,7 +15,7 @@ def calculate():
         elif result >= 35:
             feedback = "You are too fat."
         else:
-            feedback = "You are too thin."
+            feedback = "You are underweight."
         tkinter.messagebox.showinfo(
             title="Success", 
             message="BMI calculated.\nYour BMI is " + str(round(result, 1)) + ".\n" + feedback
