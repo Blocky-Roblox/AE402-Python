@@ -5,6 +5,6 @@ def showProgress(stream, chunk, bytes_remaining):
     currentProgress = (size - bytes_remaining) * 100 // size
     print("progress:", str(currentProgress), "%")
 
-yt = YouTube("https://www.youtube.com/watch?v=btPv0-d3NbE", on_progress_callback=showProgress)
+yt = YouTube("https://youtu.be/btPv0-d3NbE", on_progress_callback=showProgress)
 stream = yt.streams.first()
-stream.download("")
+stream.download()
